@@ -1,0 +1,268 @@
+/* Reset some default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Section */
+#header {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#header .logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+#header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+#header p {
+  font-size: 1.2em;
+  color: #d0e3ff;
+}
+
+/* Navigation */
+#nav {
+  background: #003366;
+}
+
+#nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+}
+
+#nav ul li {
+  margin: 0 15px;
+}
+
+#nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#nav ul li a:hover,
+#nav ul li a.active {
+  background: #0059b3;
+  border-radius: 4px;
+}
+
+/* Sections */
+section.main {
+  padding: 40px 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header.major h2 {
+  font-size: 2em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.spotlight .content {
+  flex: 1;
+}
+
+.spotlight .image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Features Section */
+ul.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+ul.features li {
+  flex: 1;
+  min-width: 250px;
+  background: #e6f0ff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+ul.features span.icon {
+  font-size: 2em;
+  color: #004080;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Statistics Section */
+ul.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0;
+}
+
+ul.statistics li {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  background: #cce0ff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Buttons */
+ul.actions li a.button {
+  background: #004080;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+ul.actions li a.button:hover {
+  background: #0059b3;
+}
+
+/* Footer */
+#footer {
+  background: #00264d;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+#footer h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#footer a {
+  color: #aaccff;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer ul.icons {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#footer ul.icons li a {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .spotlight {
+    flex-direction: column;
+  }
+
+  ul.features,
+  ul.statistics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav ul li {
+    margin: 10px 0;
+  }
+}
+.achievements {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.achievements p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.achievement-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.achievement-gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.achievement-gallery img:hover {
+  transform: scale(1.05);
+}
